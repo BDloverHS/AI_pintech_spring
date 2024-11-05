@@ -4,7 +4,6 @@ import org.koreait.global.validators.Validator;
 import org.koreait.member.controllers.RequestJoin;
 import org.koreait.member.respositories.MemberRepository;
 import org.koreait.member.validators.AdvancedJoinValidator;
-import org.koreait.member.validators.JoinValidator;
 
 public class ServiceContainer {
 
@@ -20,7 +19,7 @@ public class ServiceContainer {
 
     public JoinService joinService() {
         // 객체를 주입하여 완성된 객체를 가져옴
-        return new JoinService(joinValidator(), memberRepository());
+        return new JoinService(joinValidator());
     }
 
     public JoinService2 joinService2() {

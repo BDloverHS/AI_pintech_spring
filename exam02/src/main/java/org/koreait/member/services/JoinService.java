@@ -19,7 +19,7 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class JoinService { // 빈 이름 joinService
 
-    // public 뒤에 final을 추가하면 생성자가 자동으로 만들어짐.
+    // final을 추가하면 생성자가 자동으로 만들어짐.
     public final JoinValidator validator;
 
     // final은 상수처리로, 변하지 않기 때문에 Nonnull을 사용하여 Null이 아니도록 설정해도 생성자 자동 생성 가능

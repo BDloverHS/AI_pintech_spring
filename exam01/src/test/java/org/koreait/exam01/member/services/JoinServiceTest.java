@@ -1,8 +1,11 @@
-package org.koreait.member.services;
+package org.koreait.exam01.member.services;
 
 import org.junit.jupiter.api.Test;
 import org.koreait.global.validators.Validator;
 import org.koreait.member.controllers.RequestJoin;
+import org.koreait.member.services.JoinService;
+import org.koreait.member.services.JoinService2;
+import org.koreait.member.services.ServiceContainer;
 import org.koreait.member.validators.AdvancedJoinValidator;
 import org.koreait.member.validators.JoinValidator;
 

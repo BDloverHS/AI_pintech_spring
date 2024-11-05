@@ -16,8 +16,7 @@ public class JoinService {
     /**
      * 의존 관계
      *
-     * @param validator
-     * - JoinService 객체 생성을 위해서는 joinValidator가 필수!
+     * @param validator - JoinService 객체 생성을 위해서는 joinValidator가 필수!
      */
     public JoinService(Validator<RequestJoin> validator, MemberRepository repository) {
         this.validator = validator;
