@@ -11,7 +11,6 @@ public class Ex01 {
     @Test
     void test1() {
         AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(AppCtx4.class);
-        AnnotationConfigApplicationContext(AppCtx4.class);
 
         JoinService joinService = ctx.getBean(JoinService.class);
         InfoService infoService = ctx.getBean(InfoService.class);
@@ -27,6 +26,4 @@ public class Ex01 {
 
         ctx.close();
     }
-
-
 }
