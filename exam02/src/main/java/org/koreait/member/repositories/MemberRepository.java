@@ -2,6 +2,7 @@ package org.koreait.member.repositories;
 
 import org.koreait.member.controllers.RequestJoin;
 import org.koreait.member.entities.Member;
+import org.springframework.stereotype.Repository;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -13,6 +14,9 @@ import java.util.Map;
  * 영구 저장 처리 또는 조회, 삭제...
  *
  */
+
+// @Repository : 스프링 컨테이너가 알아서 돌아다니면서 Bean 추가
+@Repository
 public class MemberRepository {
 
     private static final Map<String, Member> members = new HashMap<>();
