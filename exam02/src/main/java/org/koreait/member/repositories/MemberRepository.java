@@ -1,5 +1,6 @@
 package org.koreait.member.repositories;
 
+import org.koreait.global.configs.ManualBean;
 import org.koreait.member.controllers.RequestJoin;
 import org.koreait.member.entities.Member;
 import org.springframework.stereotype.Repository;
@@ -17,6 +18,7 @@ import java.util.Map;
 
 // @Repository : 스프링 컨테이너가 알아서 돌아다니면서 Bean 추가
 @Repository
+@ManualBean
 public class MemberRepository {
 
     private static final Map<String, Member> members = new HashMap<>();

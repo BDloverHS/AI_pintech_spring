@@ -2,7 +2,6 @@ package org.koreait.member.entities;
 
 import lombok.Data;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Data
@@ -15,6 +14,4 @@ public class Member {
     private LocalDateTime modDt; // 수정일시
 
     private String regDtStr;
-
-
 }

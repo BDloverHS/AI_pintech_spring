@@ -34,6 +34,7 @@ public class AppCtx3 {
         return new MemberRepository();
     }
     */
+    /*
     @Bean
     public JoinService joinService() {
         return new JoinService();
@@ -48,5 +49,5 @@ public class AppCtx3 {
     public DateTimeFormatter formatter() {
         return DateTimeFormatter.ofPattern("yyyy.MM.dd HH:mm");
     }
-
+    */
 }
