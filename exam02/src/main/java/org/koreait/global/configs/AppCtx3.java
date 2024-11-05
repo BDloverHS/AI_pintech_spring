@@ -21,6 +21,11 @@ public class AppCtx3 {
         return new JoinValidator();
     }
 
+    @Bean
+    public MemberRepository memberRepository() {
+        return new MemberRepository();
+    }
+
     /*
     @Bean
     @Qualifier("mRepo")
@@ -50,4 +55,8 @@ public class AppCtx3 {
         return DateTimeFormatter.ofPattern("yyyy.MM.dd HH:mm");
     }
     */
+
+    public DateTimeFormatter formatter() {
+        return DateTimeFormatter.ofPattern("yyyy.MM.dd HH:mm");
+    }
 }

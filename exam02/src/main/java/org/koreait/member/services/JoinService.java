@@ -1,6 +1,6 @@
 package org.koreait.member.services;
 
-import lombok.NonNull;
+import  lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import org.koreait.member.controllers.RequestJoin;
 import org.koreait.member.repositories.MemberRepository;

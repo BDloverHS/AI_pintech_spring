@@ -24,7 +24,7 @@ import org.springframework.stereotype.Component;
 )
 public class AppCtx4 {
 
-    // 아래 코드를 주석 처리 시
+
     /*
     @Bean
     public MemberRepository memberRepository() {
