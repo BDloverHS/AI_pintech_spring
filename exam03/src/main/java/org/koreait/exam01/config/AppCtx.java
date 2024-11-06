@@ -8,7 +8,6 @@ import org.springframework.context.annotation.Scope;
 
 @Configuration
 public class AppCtx {
-
     @Bean
     public Message message() {
         return new Message();

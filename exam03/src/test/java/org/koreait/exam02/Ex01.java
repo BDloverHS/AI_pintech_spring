@@ -45,7 +45,7 @@ public class Ex01 {
     void test03() {
         Calculator cal = new CachedCalculator(new ProxyCalculator(new RecCalculator()));
 
-        long r1 = cal.factorial(10L);
+        long r1 = cal.factorial(49L);
         System.out.printf("r1=%d%n", r1);
         long r2 = cal.factorial(10L);
         System.out.printf("r2=%d%n", r2);
