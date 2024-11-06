@@ -23,6 +23,12 @@ dependencies {
     compileOnly 'org.projectlombok:lombok:1.18.34'
     runtimeOnly 'com.oracle.database.jdbc:ojdbc11:23.5.0.24.07'
 
+
+    // 둘 중 하나만 써야함
+    // implementation 'org.apache.tomcat:tomcat-jdbc:10.1.31'
+    implementation 'com.zaxxer:HikariCP:6.0.0'
+
+
     testImplementation "org.springframework:spring-test:$springVersion"
     testImplementation platform('org.junit:junit-bom:5.10.0')
     testImplementation 'org.junit.jupiter:junit-jupiter'
