@@ -14,7 +14,7 @@ public class ProxyCalculator implements Calculator {
         long stime = System.nanoTime(); // 공통 기능
 
         try {
-            long result = cal.factorial(num); // 핵심 기능 대신해서 수행 -> 프록시
+            long result = cal.factorial(num); // 핵심 기능 대신해서 수행
             return result;
         } finally { // 공통 기능
             long etime = System.nanoTime();
