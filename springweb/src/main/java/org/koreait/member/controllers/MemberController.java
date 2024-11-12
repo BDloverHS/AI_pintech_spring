@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import java.util.Arrays;
+
 @Controller
 @RequestMapping("/member")
 public class MemberController {
@@ -47,12 +49,14 @@ public class MemberController {
     }
 
     @PostMapping("/join")
-    public String joinPs(RequestJoin form, Model model) { // 회원 가입 처리
+    public String joinPs(RequestJoin form/*, Model model*/) { // 회원 가입 처리
 
         // 커맨드 객체는 자동으로 EL 속성으로 추가, 속성명이 클래스명, 앞자는 소문자 RequestJoin -> requestJoin
         System.out.println(form);
+        // String[] hobby = form.getHobby();
+        // System.out.println(Arrays.toString(hobby));
 
-        model.addAttribute("requestJoin", form);
+        // model.addAttribute("requestJoin", form);
 
         /**
          * 회원가입 처리 완료 후 주소 이동(로그인 페이지)
@@ -61,7 +65,7 @@ public class MemberController {
          * response.sendRedirect(request.getContextPath() + "/member/login");
          */
 
-         return "member/joinForm"; // 응답 헤더 : Location: /springweb/member/login
+        return "member/joinForm"; // 응답 헤더 : Location: /springweb/member/login
 
         // return "forward:/member/login";
         // ㄴ> RequestDispatcher rd = request.getRequestDispatcher("..."); rd.forward(request, response)
